@@ -1,37 +1,55 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+}
 
-        .hero-section {
-            position: relative;
-            height: 100vh;
-        }
+.background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 
-        .background-image {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
 
-        .content-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+}
 
-        .navbar {
-            position: absolute;
-            width: 100%;
-            z-index: 1000;
-            padding: 20px;
-        }
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
 
-        .navbar-brand, .nav-link {
-            color: white !important;
-            font-weight: bold;
-        }
+.container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.col{
+    width: auto;
+    height: auto;
+    margin: 5%;
+    padding: auto;
+}
+
+.card-img-top{
+    width: 300px; 
+    height: 250px; 
+    align-items: center;
+}
